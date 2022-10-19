@@ -10,14 +10,14 @@ header {
 }
 
 .img-header {
-    width: 50%;
-    height: 170px;
+    width: 30%;
+    height: 120px;
 }
 
 body {
-    background-color: #000000;
-    width: 95vw;
-    height: 100vh;
+    background: #000000;
+    background: linear-gradient(135deg, #000000 50%, #e4b679 100%); 
+    width: 91vw;
     margin: 1.5rem;
 }
 
@@ -51,8 +51,14 @@ body {
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 15px #e4b679;
-    margin-bottom: 30px;
+    box-shadow: 0 0 15px #fbbc00;
+    margin-bottom: 35px;
+    transition: 0.4s;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(0.9);
 }
 
 .img {
@@ -60,13 +66,8 @@ body {
     border: 1px solid #fbbc00;
     width: 65%;
     box-shadow: 0 0 10px #ffc400;
-    transition: 0.4s;
-    object-fit: cover;
 }
 
-img:hover {
-    transform: scale(1.2);
-}
 
 .name {
     font-size: 2.5rem;
